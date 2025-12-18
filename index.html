@@ -15,13 +15,6 @@
     margin: 1em 0;
   }
 
-  caption {
-    caption-side: top;
-    text-align: left;
-    font-weight: bold;
-    margin-bottom: 0.5em;
-  }
-
   th, td {
     border: 1px solid #d8e6f2;
     padding: 8px;
@@ -44,7 +37,6 @@
     background-color: #f7fbfd;
   }
 
-  /* Blue dot for filled cells */
   .dot {
     height: 12px;
     width: 12px;
@@ -53,7 +45,6 @@
     display: inline-block;
   }
 
-  /* Accessibility: visually hidden text for screen readers */
   .sr-only {
     position: absolute;
     width: 1px;
@@ -74,16 +65,20 @@
 </head>
 
 <body>
-    <thead>
-  <tr>
-    <th scope="col"><span class="sr-only">Role</span></th>
-    <th scope="col">Industry Leaders*</th>
-    <th scope="col">All Club staff^</th>
-    <th scope="col">Players</th>
-    <th scope="col">Club Doctor</th>
-    <th scope="col">Club Psychologist</th>
-  </tr>
-</thead>
+<table aria-label="Roles and responsibilities in mental health">
+  <thead>
+    <tr>
+      <!-- First column header (kept for accessibility, but not a big visible title) -->
+      <th scope="col">Responsibility</th>
+
+      <th scope="col">Industry Leaders*</th>
+      <th scope="col">All Club staff^</th>
+      <th scope="col">Players</th>
+      <th scope="col">Club Doctor</th>
+      <th scope="col">Club Psychologist</th>
+    </tr>
+  </thead>
+
   <tbody>
     <tr>
       <td>Prioritising Mental Health</td>
